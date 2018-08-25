@@ -1,0 +1,26 @@
+{
+  "name": "modal_sample",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "npx reload -d src",
+    "lint": "npx htmllint && npx csslint && npx eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fourside/modal_sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fourside/modal_sample/issues"
+  },
+  "homepage": "https://github.com/fourside/modal_sample#readme",
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^5.4.0",
+    "htmlhint": "^0.9.13",
+    "reload": "^2.3.1"
+  }
+}
