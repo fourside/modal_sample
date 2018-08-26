@@ -20,14 +20,14 @@
     closeBtn.onclick = closeModal;
   }
 
-  function openModal(event) {
-    event.preventDefault();
+  function openModal() {
     var neverAskMe = storage.getItem(storageKey);
     if (neverAskMe) {
       mainAction();
     } else {
       modal.style.display = "block";
     }
+    return false;
   }
 
   function clickBtnModal() {

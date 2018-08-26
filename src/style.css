@@ -29,30 +29,33 @@
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 }
 .modal-body{
   background-color: #fff;
   border: 1px solid #777;
   border-radius: 5px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 20px rgba(0,0,0,0.2);
   left: calc(50% - 240px);
+  top: calc(50% - 100px);
   margin: 0 auto;
   padding: 20px;
   position: fixed;
-  top: calc(50% - 100px);
   width: 440px;
+  overflow: hidden;
 }
 .close-button {
   border: 1px solid #999;
   color: #999;
   cursor: pointer;
   float: right;
-  font-weight: bold;
   height: 16px;
-  line-height: 1;
+  line-height: 16px;
   text-align: center;
   width: 16px;
+}
+.close-button:before {
+  content: "\0d7"
 }
 .close-button:hover {
   border: 1px solid #777;
