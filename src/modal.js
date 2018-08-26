@@ -25,7 +25,7 @@
     if (neverAskMe) {
       mainAction();
     } else {
-      modal.style.display = "block";
+      modal.classList.add("is-open");
     }
     return false;
   }
@@ -44,7 +44,7 @@
   }
 
   function closeModal() {
-    modal.style.display = "none";
+    modal.classList.remove("is-open");
   }
 
   // dismiss modal
