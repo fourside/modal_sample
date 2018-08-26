@@ -20,5 +20,12 @@
     modal.style.display = "none";
   }
 
+  // dismiss modal
+  window.onclick = function(event) {
+    if (modal == event.target) {
+      closeModal();
+    }
+  };
+
 })();
 
