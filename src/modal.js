@@ -5,10 +5,14 @@
   var modal;
   var storage;
   var storageKey = "neverAskMeAgain";
+  var nullStorage = {
+    getItem: function() { return true; },
+    setItem: function() {}
+  };
 
   function init() {
     modal = document.getElementById("modal");
-    storage = localStorage;
+    storage = localStorage === null ? nullStorage : localStorage;
 
     var modalOpenBtn = document.getElementById("form-button");
     modalOpenBtn.onclick = openModal;
